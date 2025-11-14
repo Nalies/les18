@@ -1,0 +1,72 @@
+/* Stijl voor de header */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(174, 226, 247);
+}
+
+header {
+    background-image: url('afbeeldingen/erasmusbrug.jpeg');
+    background-size: cover;
+    background-position: center; 
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+/* Stijl voor het centrale gedeelte */
+.col-2, .col-9 {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2, .col-9 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.col-9  {
+    background-color: #f0f0f0; /* Achtergrondkleur voor rechterdeel */
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.article img {
+    float: right;
+    margin-left: 20px;
+    width: 210px;
+    max-width: 100%; 
+    height: auto;
+}
+
+/* Stijl voor de media-query */
+[class*="col-"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {background-color:  rgb(174, 226, 247);}
+
+@media only screen and (min-width: 768px) {
+.col-2 {
+    width: 16.66%;
+}
+.col-9 {
+    width: 75%;
+}
+
+.col-2, .col-9  {
+    float: left;
+}
+
+body {background-color: #acfcbe;}
+}
+
+footer  {
+    clear: both;
+}
